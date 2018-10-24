@@ -1,16 +1,17 @@
 package com.javartisan.spark
 
+package com.javartisan.spark
+
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.{SparkConf}
 
-
-case class User(username: String, sex: String, addr: String) extends Serializable
 
 /**
   * @author ${user.name}
   */
 object SparkSQLAction {
 
+  case class User(username: String, sex: String, addr: String) extends Serializable
 
   def main(args: Array[String]) {
 
@@ -46,3 +47,4 @@ object SparkSQLAction {
   }
 
 }
+
