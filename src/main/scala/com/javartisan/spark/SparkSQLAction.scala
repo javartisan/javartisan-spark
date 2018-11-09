@@ -28,7 +28,7 @@ object SparkSQLAction {
 
 
     val users2 = Array(
-      User("w2", "boy", "jl"),
+      User("w2", "boy", "jl666"),
       User("z6", "girl", "nj")
     )
     val conf = new SparkConf().setMaster("local[*]").setAppName("spark-local-sql")
