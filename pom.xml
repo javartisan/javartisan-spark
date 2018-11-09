@@ -81,7 +81,7 @@
                     <archive>
                         <manifest>
                             <!--这里要替换成jar包main方法所在类 -->
-                            <mainClass>com.daxin.App</mainClass>
+                            <mainClass>com.javartisan.spark.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

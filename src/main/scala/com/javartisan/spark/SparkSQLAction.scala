@@ -2,8 +2,11 @@ package com.javartisan.spark
 
 package com.javartisan.spark
 
+import java.util
+
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.{SparkConf}
+import org.apache.spark.SparkConf
+import org.apache.spark.launcher.SparkLauncher
 
 
 /**
@@ -14,6 +17,9 @@ object SparkSQLAction {
   case class User(username: String, sex: String, addr: String) extends Serializable
 
   def main(args: Array[String]) {
+
+    val env= new util.HashMap[String,String]()
+    val launcher = new SparkLauncher(env)
 
     val users1 = Array(
       User("zs", "boy", "bj"),
